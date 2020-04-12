@@ -14,7 +14,7 @@ Quiz For Week 1
 
 5. What is the address of **buf** (the local variable in the **main** function)? Enter the answer in either hexadecimal format (a 0x followed by 8 “digits” 0–9 or a-f, like **0xbfff0014**) or decimal format. Note here that we want the address of **buf**, not its contents.  
 **Answer**: ~~0xbffff530~~ 0xbffff130  
-> Analysis: not careful enough.
+> Analysis: not careful enough.  
 
 6. What is the address of **ptrs** (the global variable) ? As with the previous question, use hex or decimal format.  
 **Answer**: 0x804a0d4  
@@ -38,4 +38,4 @@ Quiz For Week 1
 12. Suppose you wanted to overflow the **wis** variable to perform a stack smashing attack. You could do this by entering 2 to call **put_wisdom**, and then enter enough bytes to overwrite the return address of that function, replacing it with the address of **write_secret**. How many bytes do you need to enter prior to the address of **write_secret**?  
 **Answer**: 148
 > $(python -c 'print "A"*148 + "\x34\x85\x04\x08"')  
-[Reference](https://payatu.com/understanding-stack-based-buffer-overflow)
+[Understanding Stack Based Buffer Overflow](https://payatu.com/understanding-stack-based-buffer-overflow)
