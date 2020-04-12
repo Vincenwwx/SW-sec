@@ -1,5 +1,5 @@
 1. There is a stack-based overflow in the program. What is the name of the stack-allocated variable that contains the overflowed buffer?
-
+'Answer:'
 2. Consider the buffer you just identified: Running what line of code will overflow the buffer? (We want the line number, not the code itself.)
 3. There is another vulnerability, not dependent at all on the first, involving a non-stack-allocated buffer that can be indexed outside its bounds (which, broadly construed, is a kind of buffer overflow). What variable contains this buffer?
 4. Consider the buffer you just identified: Running what line of code overflows the buffer? (We want the number here, not the code itself.)
