@@ -31,7 +31,7 @@ Quiz For Week 1
 10. What do you enter so that **ptrs[s]** reads (and then tries to execute) starting from the 65th byte in buf, i.e., the location at **buf[64]**? Enter your answer as an (unsigned) integer.  
 **Answer**: 771675175  
 
-11. What do you replace `\xEE\xEE\xEE\xEE` with in the following input to the program (which due to the overflow will be filling in the 65th–68th bytes of \color{red}{\verb|buf|}) so that the \color{red}{\verb|ptrs[s]|} operation executes the \color{red}{\verb|write_secret|} function, thus dumping the secret? (Hint: Be sure to take endianness into account.)  
+11. What do you replace `\xEE\xEE\xEE\xEE` with in the following input to the program (which due to the overflow will be filling in the 65th–68th bytes of **buf** so that the **ptrs[s]** operation executes the **write_secret** function, thus dumping the secret? (Hint: Be sure to take endianness into account.)  
 `771675175\x00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\xEE\xEE\xEE\xEE`  
 **Answer**: \x34\x85\x04\x08  
 
