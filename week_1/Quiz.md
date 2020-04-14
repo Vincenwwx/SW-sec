@@ -1,16 +1,16 @@
 Quiz For Week 1
 ---
 1. There is a stack-based overflow in the program. What is the name of the stack-allocated variable that contains the overflowed buffer?  
-**Answer**: ~~ptrs~~ ~~buf~~
+**Answer**: ~~ptrs~~ ~~buf~~ wis  
 
 2. Consider the buffer you just identified: Running what line of code will overflow the buffer? (We want the line number, not the code itself.)  
-**Answer**: ~~101~~ ~~102~~  
+**Answer**: ~~101~~ ~~102~~ 62  
 
 3. There is another vulnerability, not dependent at all on the first, involving a non-stack-allocated buffer that can be indexed outside its bounds (which, broadly construed, is a kind of buffer overflow). What variable contains this buffer?  
-**Answer**: ~~wis~~ ~~l->data~~  
+**Answer**: ~~wis~~ ~~l->data~~ ptrs  
 
 4. Consider the buffer you just identified: Running what line of code overflows the buffer? (We want the number here, not the code itself.)  
-**Answer**: ~~70~~ ~~82~~  
+**Answer**: ~~70~~ ~~82~~ 101  
 
 5. What is the address of **buf** (the local variable in the **main** function)? Enter the answer in either hexadecimal format (a 0x followed by 8 “digits” 0–9 or a-f, like **0xbfff0014**) or decimal format. Note here that we want the address of **buf**, not its contents.  
 **Answer**: ~~0xbffff530~~ 0xbffff130  
